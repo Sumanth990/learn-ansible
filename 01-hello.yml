@@ -1,0 +1,13 @@
+- name: Just say Hello
+  hosts: all
+  tasks:
+    - name: Print a message Hello #optional
+      ansible.builtin.debug: #task is to run the module
+        msg: Hello
+
+- name: Just say Bye
+  hosts: all
+  tasks:
+    - name: Print a message Bye #optional
+      ansible.builtin.debug: #task is to run the module
+        msg: Bye!!
