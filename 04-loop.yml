@@ -14,6 +14,7 @@
       ansible.builtin.debug:
         msg: Hello, {{ item.name }}, Age of yours is {{ item.age }} years.
       loop:
-        - { name: "Ram", age: 20 } #JSON input
-        - { name: "John", age: 30 }
-        - { name: "Steve", age: 40 }
+        - { name: "Ram", age: 20, run: true } #JSON input
+        - { name: "John", age: 30, run: false }
+        - { name: "Steve", age: 40, run: true }
+      when: item.run # boolean when true it will run
