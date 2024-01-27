@@ -1,6 +1,6 @@
 - name: Demo on vars
   hosts: localhost
-# If we declare variable here (play level) then all the tasks can access this variables.
+# If we declare variable here (play level) then all the tasks can access this variable.
   vars:
     URL: play.google.com
   tasks:
@@ -9,4 +9,4 @@
       msg: URL = {{ URL }}
 
   roles:
-    - demo
+    - demo #role name
