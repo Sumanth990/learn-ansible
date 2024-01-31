@@ -1,4 +1,4 @@
-- name: Demo on role dependencies
-  hosts: localhost
-  roles:
-    - nginx
+name: Demo on role dependencies
+hosts: localhost
+roles:
+  - nginx
