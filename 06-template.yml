@@ -3,5 +3,5 @@
   tasks:
     - name: Copy a file
       ansible.builtin.copy:
-        scr: sample.txt
+        src: sample.txt
         dest: /tmp/sample.txt
