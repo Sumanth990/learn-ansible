@@ -4,8 +4,8 @@
     - name: Block
       block:
         - name: Run shell command
-      ansible.builtin.shell: exit 1
-      ignore_errors: yes
+          ansible.builtin.shell: exit 1
+          ignore_errors: yes
 
       rescue:
         - name: Say Hai
