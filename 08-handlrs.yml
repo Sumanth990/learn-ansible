@@ -5,3 +5,9 @@
       ansible.builtin.template:
         src: sample.txt
         dest: /tmp/sample.txt
+
+#if above task changes we need to run handlers
+
+- name: Say Hello again
+  ansible.builtin.debug:
+    msg: Hello {{ name }} again!!
