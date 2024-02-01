@@ -5,7 +5,7 @@
       ansible.builtin.template:
         src: sample.txt
         dest: /tmp/sample.txt
-        notify: Say Hello again
+      notify: Say Hello again
 #if above task changes we need to run handlers
 
   handlers:
