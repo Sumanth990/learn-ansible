@@ -1,7 +1,7 @@
-- name: Handlers demo
+- name:
   hosts: localhost
   tasks:
-    - name: Copy sample
+    - name:
       ansible.builtin.template:
-      src: sample.txt
-      dest: /tmp/sample.txt
+        src: sample.txt
+        dest: /tmp/sample.txt
