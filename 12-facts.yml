@@ -5,4 +5,4 @@
       ansible.builtin.debug:
         msg:
           - "{{ansible_date_time}}"
-          - "{{ansible_architecture}}"
+          - "{{ansible_architecture}}" -- architecture}
