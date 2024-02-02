@@ -3,4 +3,4 @@
   tasks:
     - name: Print facts
       ansible.builtin.debug:
-        msg: "{{ansible_architecture"}}
+        msg: "{{ansible_architecture}}"
