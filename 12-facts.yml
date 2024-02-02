@@ -4,3 +4,7 @@
     - name: Print facts
       ansible.builtin.debug:
         msg: "{{ansible_architecture}}"
+
+    - name: Print facts
+      ansible.builtin.debug:
+        msg:  "{{ansible_date_time}}"
