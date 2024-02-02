@@ -4,5 +4,6 @@
     - name: Print facts
       ansible.builtin.debug:
         msg:
-          - date_time details: "{{ansible_date_time}} \n"
+          - date_time details: "{{ansible_date_time}} "
+
           - architecture details: "{{ansible_architecture}}"
