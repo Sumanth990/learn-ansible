@@ -2,6 +2,6 @@
   hosts: localhost
   tasks:
     - name: Filters
-      ansible.builtin.unachieve:
+      ansible.builtin.unarchive:
         src: "https://nginx.org/download/nginx-1.25.3.zip"
         dest: /tmp
