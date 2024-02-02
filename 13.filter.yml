@@ -11,4 +11,4 @@
 
     - name: URL split
       ansible.builtin.debug:
-        msg: "{{ URL | split ('/') }}" # double quotes inside a double quote is a problem use single quote.
+        msg: "{{ URL | split ('/') | last }}" # double quotes inside a double quote is a problem use single quote.
