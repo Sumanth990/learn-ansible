@@ -6,5 +6,10 @@
     - name: Print a message using variable
       ansible.builtin.debug:
         msg: URL = {{URL}}
+    - name: Print variable declared in tasks
+      vars:
+        URL: task.google.com
+        ansible.builtin.debug:
+          msg: URL = {{URL}}
   roles:
     - demo
