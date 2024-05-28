@@ -20,5 +20,6 @@
 #      when: epic and monumental #| bool
 
     - name: Run the command if "epic" is false
-      ansible.builtin.shell: echo "This certainly isn't epic!"
+      ansible.builtin.debug:
+        msg: This certainly isn't epic!
       when: not (epic and monumental)
