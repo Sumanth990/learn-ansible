@@ -4,12 +4,9 @@
     - name: Shell
       ansible.builtin.shell:
         cmd: uptime
-
       register: out
-#        - output
 
     - name: Print output
       ansible.builtin.debug:
         msg:
           - system time - {{out}}
-          - present working directory
