@@ -10,3 +10,8 @@
       ansible.builtin.debug:
         msg:
           - system time - {{out}}
+
+    - name: Write into a file
+      ansible.builtin.lineinfile:
+      path: /tmp/out
+      line: out.stdout
