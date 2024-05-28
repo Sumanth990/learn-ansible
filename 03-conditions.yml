@@ -4,9 +4,9 @@
     - name: Print a Hello, John
       ansible.builtin.debug:
         msg: Hello, John
-      when: {{ name }} == John
+      when: {{ item }} == John
 
     - name: Print a Hello, Ram
       ansible.builtin.debug:
         msg: Hello, Ram
-      when: {{ name }} == Ram
+      when: {{ item }} == Ram
