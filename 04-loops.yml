@@ -13,7 +13,7 @@
       ansible.builtin.debug:
         msg: Hello, {{ item.name }}, Age {{ item.age }} years.
       loop:
-        - { name: 'Ram', age: 30, run: "true" }
+        - { name: 'Ram', age: 30, run: true }
         - { name: 'John', age: 31, run: false }
         - { name: 'Seen', age: 32, run: true }
       when: item.run
