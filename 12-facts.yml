@@ -6,4 +6,4 @@
         msg:
           - architecture details : "{{ ansible_architecture }}"
           - date and time details: "{{ ansible_date_time }}"
-          - iso_basic details    : "{{ iso8601_basic }}"
+          - iso_basic details    : "{{ ansible_date_time.iso8601_basic }}"
