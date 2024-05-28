@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
     epic: true
-    monumental: "false"
+    monumental: "true"
   tasks:
 #    - name: Print a Hello, John
 #      ansible.builtin.debug:
