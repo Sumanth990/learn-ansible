@@ -4,19 +4,19 @@
     epic: false
     monumental: "true"
   tasks:
-#    - name: Print a Hello, John
-#      ansible.builtin.debug:
-#        msg: Hello, John
-#      when: user == John
-#
-#    - name: Print a Hello, Ram
-#      ansible.builtin.debug:
-#        msg: Hello, Ram
-#      when: user == "Ram"
-
-    - name: Run the command if "epic" is false
+    - name: Print a Hello, John
       ansible.builtin.debug:
-        msg: This certainly isn't epic!
-      when:
-        - not epic
-        - monumental | bool
+        msg: Hello, John
+      when: user == John
+
+    - name: Print a Hello, Ram
+      ansible.builtin.debug:
+        msg: Hello, Ram
+      when: user == "Ram"
+
+#    - name: Run the command if "epic" is false
+#      ansible.builtin.debug:
+#        msg: This certainly isn't epic!
+#      when:
+#        - epic
+#        - monumental | bool
