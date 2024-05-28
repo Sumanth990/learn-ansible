@@ -7,7 +7,7 @@
     - name: Print a Hello, John
       ansible.builtin.debug:
         msg: Hello, John
-      when: user == "John"
+      when: user == John
 
     - name: Print a Hello, Ram
       ansible.builtin.debug:
