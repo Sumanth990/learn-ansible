@@ -3,8 +3,16 @@
   tasks:
     - name: Loop demo
       ansible.builtin.debug:
-        msg: Hello {{ item }}
+        msg: Hello, {{ item }}
       loop:
         - Ram
         - John
         - Seen
+#Maps in loop
+    - name: Maps in loop
+      ansible.builtin.debug:
+        msg: Hello, {{item.name}}, Age {{item.age}} years.
+      loop:
+        - name: Ram, age:30
+        - name: John, age:31
+        - name: Seen, age:32
