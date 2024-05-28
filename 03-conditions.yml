@@ -15,5 +15,6 @@
       when: user == "Ram"
 
     - name: Run the command if epic or monumental is true
-      ansible.builtin.shell: echo this is awesome
+      ansible.builtin.debug:
+        msg: This is awesome
       when: epic or monumental | bool
