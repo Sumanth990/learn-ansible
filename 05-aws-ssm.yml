@@ -2,4 +2,4 @@
   hosts: localhost
   tasks:
     - name: Print value
-      debug: msg="{{ lookup('amazon.aws.aws_ssm', 'test', region='us-east-1' ) }}"
+      debug: msg="{{ lookup('amazon.aws.aws_ssm', 'dev.mysql.root_password', region='us-east-1' ) }}"
