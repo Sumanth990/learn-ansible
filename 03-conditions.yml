@@ -22,4 +22,4 @@
     - name: Run the command if "epic" is false
       ansible.builtin.debug:
         msg: This certainly isn't epic!
-      when: not (epic and monumental)
+      when: not epic
