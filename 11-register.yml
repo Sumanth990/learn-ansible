@@ -5,11 +5,11 @@
       ansible.builtin.shell:
         cmd: uptime
       register: out
-#
-#    - name: Print output
-#      ansible.builtin.debug:
-#        msg:
-#          - system time - {{out}}
+
+    - name: Print output
+      ansible.builtin.debug:
+        msg:
+          - system time - {{out}}
 
     - name: Write into a file
       ansible.builtin.lineinfile:
