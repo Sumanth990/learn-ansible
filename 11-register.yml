@@ -13,5 +13,5 @@
 
     - name: Write into a file
       ansible.builtin.lineinfile:
-        path: /home/centos/learn-ansible/out
+        path: /tmp/out
         line: out
