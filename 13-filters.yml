@@ -10,4 +10,6 @@
         remote_src: yes
 
 #echo https://nginx.org/download/nginx-1.25.5.zip | awk -F / {'print $5'} | sed -e 's/.zip//'
-#    - name: Print version of nginx
+    - name: Print version of nginx
+      ansible.builtin.debug:
+        msg: URL= "{{URL}}"
