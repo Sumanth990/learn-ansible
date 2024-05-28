@@ -19,6 +19,6 @@
         msg: This certainly is epic!
       when: epic and monumental #| bool
 
-    - name: Run the command if "epic" is false
-      ansible.builtin.shell: echo "This certainly isn't epic!"
-      when: not epic
+#    - name: Run the command if "epic" is false
+#      ansible.builtin.shell: echo "This certainly isn't epic!"
+#      when: not epic
