@@ -1,5 +1,8 @@
 - name: conditions in ansible
   hosts: localhost
+  vars:
+    epic: yes
+    monumental: "true"
   tasks:
     - name: Print a Hello, John
       ansible.builtin.debug:
@@ -10,3 +13,7 @@
       ansible.builtin.debug:
         msg: Hello, Ram
       when: user == "Ram"
+
+    - name: Run the command if epic or monumental is true
+      ansible.builtin.shell: echo this is awesome
+      when: epic or monumental | bool
