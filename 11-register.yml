@@ -3,9 +3,8 @@
   tasks:
     - name: Shell
       ansible.builtin.shell:
-        cmd:
-          - uptime
-          - pwd
+        - uptime
+        - pwd
       register: out
 #        - output
 
