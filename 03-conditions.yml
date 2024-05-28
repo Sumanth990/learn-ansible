@@ -1,7 +1,7 @@
 - name: conditions in ansible
   hosts: localhost
   vars:
-    epic: true
+    epic: false
     monumental: "true"
   tasks:
 #    - name: Print a Hello, John
