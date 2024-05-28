@@ -1,16 +1,16 @@
 - name: Rescue demo
   hosts: localhost
   tasks:
-#    - name: Block
-#      block:
-#        - name: Print a test message,
-#          ansible.builtin.debug:
-#            msg: Hello test
+    - name: Block
+      block:
+        - name: Print a test message,
+          ansible.builtin.debug:
+            msg: Hello test
 
-    - name: Run shell command
-      ansible.builtin.shell: exit 1
+        - name: Run shell command
+          ansible.builtin.shell: exit 1
 
-  rescue:
-    - name: Say Hai rescue
-      ansible.builtin.debug:
-        msg: Hai
+      rescue:
+        - name: Say Hai rescue
+          ansible.builtin.debug:
+            msg: Hai
