@@ -13,5 +13,5 @@
 
     - name: Write into a file
       ansible.builtin.lineinfile:
-      path: /tmp/out
-      line: out
+        path: /tmp/out
+        line: out
