@@ -3,7 +3,7 @@
   tasks:
     - name: Shell
       ansible.builtin.shell:
-        cmd: ['uptime']
+        cmd: uptime
 
       register: out
 #        - output
@@ -12,4 +12,4 @@
       ansible.builtin.debug:
         msg:
           - system time - {{out}}
-#          - present working directory - {{output}}
+          - present working directory
