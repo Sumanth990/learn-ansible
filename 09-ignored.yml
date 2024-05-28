@@ -5,6 +5,6 @@
       ansible.builtin.shell: exit 1
       ignore_errors: true
 
-    - name: Say Hai
-      ansible.builtin.debug:
-        msg: Hai
+#    - name: Say Hai
+#      ansible.builtin.debug:
+#        msg: Hai
