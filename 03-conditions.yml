@@ -12,7 +12,7 @@
     - name: Print a Hello, Ram
       ansible.builtin.debug:
       vars:
-        user: Ram
+        user: "Ram"
         msg: Hello, Ram
       when: "{{ user }}"
 
