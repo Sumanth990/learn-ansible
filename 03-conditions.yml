@@ -10,8 +10,6 @@
       when: user == "John"
 
     - name: Print a Hello, Ram
-      vars:
-        user: Ram
       ansible.builtin.debug:
         msg: Hello, Ram
       when: user == "Ram"
