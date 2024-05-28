@@ -1,0 +1,9 @@
+- name: Print facts
+  hosts: localhost
+  tasks:
+    - name: Print facts
+      ansible.builtin.debug:
+        msg:
+          - architecture details : "{{ ansible_architecture }}"
+          - date and time details: "{{ ansible_date_time }}"
+          - iso_basic details    : "{{ iso8601_basic }}"
