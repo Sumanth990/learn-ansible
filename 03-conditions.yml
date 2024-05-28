@@ -1,7 +1,7 @@
 - name: conditions in ansible
   hosts: localhost
   vars:
-    epic: false
+    epic: true
     monumental: "true"
   tasks:
 #    - name: Print a Hello, John
@@ -17,7 +17,7 @@
     - name: Run the command if "epic" or "monumental" is true
       ansible.builtin.debug:
         msg: This certainly is epic!
-      when: epic and monumental | bool
+      when: epic and monumental #| bool
 
 #    - name: Run the command if "epic" is false
 #      ansible.builtin.shell: echo "This certainly isn't epic!"
