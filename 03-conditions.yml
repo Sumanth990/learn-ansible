@@ -1,0 +1,9 @@
+- name: conditions in ansible
+  hosts: localhost
+  tasks:
+    - name: Print a Hello, John
+      ansible.builtin.debug:
+        msg: Hello, John
+    - name: Print a Hello, Ram
+      ansible.builtin.debug:
+        msg: Hello, Ram
