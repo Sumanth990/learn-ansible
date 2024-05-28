@@ -3,11 +3,12 @@
   tasks:
     - name: Shell
       ansible.builtin.shell:
-        cmd: uptime
+        cmd:
+          - uptime
       register: out
 #        - output
 
-    - name: Print out
+    - name: Print output
       ansible.builtin.debug:
         msg:
           - system time - {{out}}
