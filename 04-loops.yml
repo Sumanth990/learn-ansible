@@ -16,3 +16,4 @@
         - { name: 'Ram', age: 30, run: 'true' }
         - { name: 'John', age: 31, run: false }
         - { name: 'Seen', age: 32, run: true }
+      when: item.run
