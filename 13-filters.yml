@@ -1,8 +1,13 @@
 - name: Filter
   hosts: localhost
+  vars:
+    URL: https://nginx.org/download/nginx-1.25.5.zip
   tasks:
     - name: Filters
       ansible.builtin.unarchive:
-        src: "https://nginx.org/download/nginx-1.25.5.zip"
+        src: "{{ URL }}"
         dest: /tmp
         remote_src: yes
+
+#echo https://nginx.org/download/nginx-1.25.5.zip | awk -F / {'print $5'} | sed -e 's/.zip//'
+#    - name: Print version of nginx
