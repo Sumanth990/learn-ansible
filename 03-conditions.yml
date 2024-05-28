@@ -18,5 +18,5 @@
       ansible.builtin.debug:
         msg: This certainly isn't epic!
       when:
-        - epic
+        - not epic
         - monumental | bool
