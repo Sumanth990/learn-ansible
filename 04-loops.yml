@@ -11,7 +11,7 @@
 #Maps in loop
     - name: Maps in loop
       ansible.builtin.debug:
-        msg: Hello, {{item.name}}, Age {{item.age}} years.
+        msg: Hello, {{ item.name }}, Age {{ item.age }} years.
       loop:
         - { name: Ram, age: 30 }
         - { name: John, age: 31 }
