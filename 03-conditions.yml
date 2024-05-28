@@ -1,8 +1,8 @@
 - name: conditions in ansible
   hosts: localhost
   vars:
-    epic: false
-    monumental: "true"
+    epic: true
+    monumental: false
   tasks:
 #    - name: Print a Hello, John
 #      ansible.builtin.debug:
