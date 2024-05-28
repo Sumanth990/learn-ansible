@@ -2,9 +2,16 @@
   hosts: localhost
   tasks:
     - name: Shell
-      ansible.builtin.shell: uptime
-      register: out
+      ansible.builtin.shell:
+        cmd:
+          - uptime
+          - pwd
+      register:
+        - out
+        - output
 
     - name: Print out
       ansible.builtin.debug:
-        msg: system time {{out}}
+        msg:
+          - system time - {{out}}
+          - present working directory - {{output}}
