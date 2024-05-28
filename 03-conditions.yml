@@ -9,4 +9,4 @@
     - name: Print a Hello, Ram
       ansible.builtin.debug:
         msg: Hello, Ram
-      when: user == Ram
+      when: user == "Ram"
