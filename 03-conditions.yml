@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
     epic: true
-    monumental: "true"
+    monumental: "false"
   tasks:
 #    - name: Print a Hello, John
 #      ansible.builtin.debug:
@@ -19,4 +19,4 @@
         msg: This certainly isn't epic!
       when:
         - epic
-        - monumental
+        - monumental | bool
