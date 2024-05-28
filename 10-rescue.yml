@@ -7,7 +7,8 @@
           ansible.builtin.shell: exit 1
 
         - name: Print a test message,
-          debug: msg= Hello test
+          ansible.builtin.debug:
+            msg: Hello test
 
       rescue:
         - name: Say Hai
