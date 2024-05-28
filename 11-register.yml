@@ -6,12 +6,11 @@
         cmd:
           - uptime
           - pwd
-      register:
-        - out
-        - output
+      register: out
+#        - output
 
     - name: Print out
       ansible.builtin.debug:
         msg:
           - system time - {{out}}
-          - present working directory - {{output}}
+#          - present working directory - {{output}}
